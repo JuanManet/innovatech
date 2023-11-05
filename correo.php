@@ -2,9 +2,9 @@
 
     $destinatario = 'jmanuelechavarria20@gmail.com';
 
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $mensaje = $_POST['mensaje'];
+    $nombre = $_POST['Nombre'];
+    $email = $_POST['Email'];
+    $mensaje = $_POST['Mensaje'];
 
     $header = "Enviado desde Innovatech";
     $mensajeCompleto = $mensaje . "/nAtentamente: ". $nombre;

@@ -4,22 +4,27 @@
 	<title>Formulario de Contacto</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <link rel="stylesheet" href="assets/css/contacto.css">
 </head>
 <body>
-	<section class="container">
-		<div class="row">
-		<h3 class="center-align">CONTACTO</h3>
-		<form action="correo.php" method="POST">
-     <input type="text" placeholder="Nombre" name="nombre" required>
-     <input type="email" placeholder="Correo" name="email" required>
-	 <input type="text" placeholder="Mensaje" name="mensaje" required>
-	 
-     <button type="submit">Enviar</button>
-	 <button type="submit" formaction="init.php">Volver</button>
-</form>
-			</article>
-		</div>
-	</section>
+	<div class="form-box">
+		<h1>Contacto</h1>
+		
+		<form action="correo.php" method="post">
+			<label for="name">Nombre</label>
+			<input id="name" type="text" name="Nombre" required>
+		  
+			<label for="email">Correo</label>
+			<input id="email" type="email" name="Email" required>
+		  
+			<label for="message">Mensaje</label>
+			<textarea id="message" name="Mensaje" required></textarea>
+			<br></br>
+			<input type="submit"  class="btn" value="Enviar">
+		</br></br>
+		<input type="submit" formaction="init.php"  class="btn" value="Volver">
+		</form>
+	  </div>
 
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
